@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AS_food</title>
+    <link rel="stylesheet" href="food.css">
+    <link rel="shortcut icon" href="image/logo.png">
+</head>
+
+<body>
+    <section id="first">
+        <div class="lg">
+            <img id="logo" src="image/logo.png">
+            <p class="logotext"> AS_food</p>
+        </div>
+        <div class="srch">
+            <select id="option">
+                <option value="dto">select your location</option>
+                <option value="dto">Daltonganj</option>
+                <option value="dto">Ranchi</option>
+                <option value="dto">Dhumka</option>
+                <option value="dto">Gadwa</option>
+            </select>
+            <div class="area">
+                <input type="text" placeholder=" search your dish">
+                <img src="image/search.png">
+            </div>
+        </div>
+        <div class="bskt">
+            <img onclick="addfood()" src="image/basket.png">
+            <span id="ordernumber">0</span>
+        </div>
+        <button onclick="chng()" id="active"> sign in</button>
+    </section>
+    <section id="second">
+        <div class="srch2">
+            <select id="option">
+                <option value="dto">select your location</option>
+                <option value="dto">Daltonganj</option>
+                <option value="dto">Ranchi</option>
+                <option value="dto">Dhumka</option>
+                <option value="dto">Gadwa</option>
+            </select>
+            <div class="area">
+                <input type="text" placeholder=" search your dish">
+                <img src="image/search.png">
+            </div>
+        </div>
+    </section>
+    <section id="third">
+        <div id="additem">
+            <div id="item1">
+                <h5>Food Item</h5>
+                <!-- <div id="foodcart">
+                    <span id="numaccord">1.</span>
+                    <img src="image/burger.png">
+                    <span onclick="minus()" id="minus">-</span>
+                    <span id="number">1</span>
+                    <span onclick="add()" id="add">+</span>
+                    <div class="foodabout">
+                        <h2>Burger</h2>
+                        <p>seller:as_food partner</p>
+                        <p>&#8377; 40</p>
+                        <span onclick="rmv()" id="remove"> REMOVE</span>
+                    </div>
+                </div> -->
+            </div>
+            <div id="item2">
+                <h5>PRICE DETAILS</h5>
+                <!-- <span id="price">
+                    <p>Price (5 Items)</p>
+                    <p>&#8377; 1500</p>
+                </span>
+                <span id="price">
+                    <p>discount</p>
+                    <p>-&#8377;20 </p>
+                </span>
+                <span id="price">
+                    <p>Coupons for you</p>
+                    <p>-&#8377;39</p>
+                </span>
+                <span id="price">
+                    <p>Delivery charge</p>
+                    <p>+&#8377;20 </p>
+                </span>
+                <span id="price">
+                    <p>Secured Packaging fee</p>
+                    <p>+&#8377;0</p>
+                </span>
+                <span id="pricetotal">
+                    <p>Total Amount</p>
+                    <p>&#8377;1461 </p>
+                </span>
+                <span id="pricesave">
+                    <p>You will save &#8377;25 on this order</p>
+                 </span> -->
+
+            </div>
+        </div>
+        <div class="tx">
+            <h2>PLACE YOUR FIRST ORDER & GET </h2>
+            <h1>Up to 60% OFF</h1>
+            <h1>+ Free delivery</h1>
+            <h3>Order now to avail the benefits </h3>
+        </div>
+        <img id="sideimg" src="image/burger.png">
+    </section>
+    <section id="fourth">
+        <h2>EXPLORE</h2>
+        <div class="lie">
+            <div class="firstline">
+                <div id="lf">
+                    <p>Offers</p>
+                    <p>
+                        <FONT COLOR="darkorchid">Flat Discounts</FONT>
+                    </p>
+                    <img id="swipe" src="image/swipe.png">
+                </div>
+                <div><img id="dollar" src="image/dollar-icon.svg"></div>
+            </div>
+            <div class="secondline">
+                <div id="lf">
+                    <p>Top 10</p>
+                    <p id="ft">Local Restaurants</p>
+                </div>
+                <div>
+                    <img id="dollar" src="image/online-shop.png">
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="fifth">
+        <img id="left" src="image/left (2).png">
+        <img id="right" src="image/right (2).png">
+        <h3>What`s On Your Mind?</h3>
+        <div id="wrap2">
+            <!-- <div id="batch">
+                <img onclick="create()" id="imgwrap" src="image/soup.png">
+                <p id="title">Soup</p>
+                <div class="rupee">
+                    <img src="image/ruppe.png">
+                    <p id="moneywrap">50 for one</p>
+                </div>
+            </div> -->
+
+        </div>
+        <div class="wrapper" id="wrap4">
+            <!-- <div id="batch">
+                <img onclick="create()" id="imgwrap" src="image/soup.png">
+                <p id="title">Soup</p>
+                <div class="rupee">
+                    <img src="image/ruppe.png">
+                    <p id="moneywrap">50 for one</p>
+                </div>
+            </div> -->
+        </div>
+    </section>
+    <section id="sixth">
+        <h3>Top brands loved by customers</h3>
+        <div class="wrapper" id="wrap3">
+            <!-- <div id="batch">
+                <img class="icon" id="imgwrap" src="image/pizza.png">
+                <div class="cup">
+                    <div class="star">
+                        <p> Domino`s Pizza</p>
+                        <span class="str">4.2
+                            <img src="image/star.png">
+                        </span>
+                    </div>
+                    <div class="time">
+                        <img src="image/clock.png">
+                        <p>31 min. 25km</p>
+                    </div>
+                    <div class="money">
+                        <img src="image/ruppe.png">
+                        <p id="moneywrap">250 for one</p>
+                    </div>
+                    <div class="sale">
+                        <img src="image/sale.png">
+                        <p>50% OFF up to rs100</p>
+                    </div>
+                    <span onclick="create()" id="add">Add to cart</span>
+                </div>
+            </div> -->
+
+        </div>
+    </section>
+    <section id="payment">
+        <span id="deliver">
+            <p>Delivery to:</p>
+            <input type="text" placeholder="enetr your email" id="emailsend">
+            <p id="sameemail"></p>
+            <button id="emailcheck" onclick="takeout()">ok</button>
+            <p>near this to confirm address place here</p>
+        </span>
+        <div id="paymentoption">
+            <!-- <p class="set">Payment option</p>
+       <span id="ogpay">
+        <input type="checkbox">
+        <p>only Cash on Delivery </p>
+       </span>
+       <span id="pricedtl">
+        <h2>Price Details</h2>
+         <div class="st">
+        <p>price(items)</p>
+        <p>&#8377;</p>
+    </div>
+        <div class="st" >
+            <p>Delivery charges</p>
+            <p><font color="orangered">FREE</font></p>
+        </div>
+     <div class="st" >
+        <p>Amount Payable</p>
+        <p>&#8377;25</p>
+     </div>
+    </span>
+       </span>
+       <div id="shield">
+        <div class="support">
+            <img src="image/time-icon.svg" alt="" />
+                    <h1>Customer Support
+                    </h1>
+        </div>
+        <div class="support">
+            <img src="image/security-icon.svg" alt="" />
+                    <h1>Secure Payment
+                    </h1>
+        </div>
+        <div class="support">
+            <img src="image/dollar-icon.svg" alt="" />
+            <h1>Return & Refund
+            </h1>
+        </div>
+       </div>
+       <div class="cobutton"><button onclick="goback()" id="goback">goback</button></div> 
+      <div class="cobutton"><button onclick="goahead()" id="goahead">Continue</button></div>  -->
+        </div>
+    </section>
+    <section id="confirmation">
+        <div id="box">
+            <div id="container">
+                <h1>Thank you</h1>
+                <p id="putemail"></p>
+                <p>Your order has been confirmed.now, we wait for your next order and review also</p>
+                <button onclick="ok()" id="ok">OK</button>
+            </div>
+        </div>
+    </section>
+    <footer>
+        <p>This page is handling by AS_STACK</p>
+        <p>copyright &copy; www.AS_stack.com. All rights reserved</p>
+        <P>Designed by Aman kumar singh</P>
+    </footer>
+
+    <script src="product.js"></script>
+    <script src="main.js"></script>
+    <script src="serve.js"></script>
+    <script src="cart.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+    <script type="text/javascript">
+        emailjs.init('ULMlE19ppzfagVGUO')
+    </script>
+</body>
+
+</html>

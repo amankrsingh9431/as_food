@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AS_food</title>
+    <link rel="stylesheet" href="as.css">
+    <link rel="shortcut icon" href="image/logo.png">
+</head>
+
+<body>
+    <!-- navigation bar -->
+    <div id="nav1">
+        <img id="menu" src="image/menu.png">
+        <img id="navimg" src="image/logo.png">
+
+        <ul>
+            <li class="item "><a href="#">Home</a></li>
+            <li class="item "><a href="#">About</a></li>
+            <li class="item  "><a href="#">Services</a></li>
+            <li class="item "><a href="#">Recipes</a></li>
+            <li class="item "><a href="#">Contact us</a></li>
+        </ul>
+        <div class="srch"> <input type="text" placeholder="search your item" id="search">
+            <img id="bar" src="image/search.png">
+        </div>
+        <div class="bskt">
+            <img src="image/basket.png">
+            <span id="ordernumber">0</span>
+        </div>
+        <button onclick="chng()" id="active"> sign in</button>
+    </div>
+    <div id="nav2">
+        <h1>Welcome To AS_FOOD Delivery </h1>
+        <p>"We welcome your appetite. Now let's order our food and satisfy your stomach"<br>
+            I hope you will find happiness and food here.<br>
+            So,Live,love,eat and order repeat</p>
+        <button id="order" onclick="exploreFood()">Explore Food</button>
+    </div>
+    <section id="choose">
+        <h2>Why people choose us?<br>& <br> why we are best, between People?</h2>
+        <div class="col">
+            <div class="card">
+                <img src="image/dish-5.png" alt="" />
+                <h3>
+                    Choose <br />
+                    your favorite <br />
+                    food
+                </h3>
+            </div>
+        </div>
+        <div class="col">
+            <div class="card">
+                <img src="image/bulk.png" alt="" />
+                <h1>Bulk ordering</h1>
+                <h4>
+                    We give you best food and price <br> in your bulk order with each and <br> every plate we give you
+                    discount.
+                </h4>
+            </div>
+        </div>
+        <div class="col">
+            <div class="card">
+                <img src="image/scooter.png" alt="" />
+                <h1>Food ordering</h1>
+                <h3>
+                    Get delivery<br>
+                    at your door<br>
+                    step
+                </h3>
+            </div>
+        </div>
+    </section>
+    <section id="third">
+        <h4 class="hd">What we Serve</h4>
+        <h2 class="hd2">Just sit back at home<br> we will <FONT Color="orangered">take care</FONT>
+        </h2>
+        <p>Good service means a friendly, welcoming service. A restaurant owner should not merely strive to avoid bad
+            service,</p>
+        <div class="rowthird">
+            <div class="row">
+                <div class="cd">
+                    <img src="image/car-icon.svg" alt="" />
+                    <h1>Free Home Delivary
+                    </h1>
+                    <span>
+                        For all orders over $50
+                    </span>
+                </div>
+            </div>
+            <div class="row">
+                <div class="cd">
+                    <img src="image/dollar-icon.svg" alt="" />
+                    <h1>Return & Refund
+                    </h1>
+                    <span>
+                        Money Back Guarantee
+                    </span>
+                </div>
+            </div>
+            <div class="row" id="row3">
+                <div class="cd">
+                    <img src="image/security-icon.svg" alt="" />
+                    <h1>Secure Payment
+                    </h1>
+                    <span>
+                        100% Secure Payment
+                    </span>
+                </div>
+            </div>
+            <div class="row" id="row2">
+                <div class="cd">
+                    <img src="image/time-icon.svg" alt="" />
+                    <h1>Customer Support
+                    </h1>
+                    <span>
+                        Alway Online 24/7
+                    </span>
+                </div>
+            </div>
+        </div>
+    </section>
+    <div id="contactus">
+        <div id="thisside">
+            <img src="image/logo.png">
+            <h1>Contact us</h1>
+            <p>Feel free to ask any think at any time.</p>
+        </div>
+        <form id="secondthis">
+            <label for="Name">Name:</label>
+            <input type="text" placeholder="enter name" id="Name" name="Name">
+            <label for="Email">Email:</label>
+            <input type="email" placeholder="enter email id" id="Email" name="email">
+            <label for="Name">Purpose:</label>
+            <input type="text" placeholder="enter Purpose" id="Purpose" name="Purpose">
+            <label for="Message">Message:</label>
+            <textarea id="Message" name="Message" placeholder="write your Message here!!" ></textarea>
+            <div id="send" onclick="submitconfirmation()">Submit</div>
+        </form>
+    </div>
+    <!-- footer -->
+    <footer>
+        <img id="lgft" src="image/logo.png">
+        <div class="first">
+            <p>AS_FOOD </p>
+            <P>+91123456789</P>
+            <P>as_food@gmail.com</P>
+            <span> Our job is delivering a delcious food with <br> fast free delivery and easy.</span>
+        </div>
+        <div class="second">
+            <p class="tag">More</p>
+            <p>Menus</p>
+            <p>Services</p>
+            <p>Contact Us</p>
+        </div>
+        <div class="third">
+            <p class="tag">Company</p>
+            <p>About Us</p>
+            <p>Support</p>
+            <p>Terms & Conditions</p>
+            <p>Privacy Policy</p>
+        </div>
+        <div class="fourth">
+            <p>Social Media</p>
+            <img src="image/fb.png">
+            <img src="image/insta.png">
+            <img src="image/in.png">
+            <img src="image/git.png">
+        </div>
+        <div class="tg">
+            <img src="image/AS_STACK.png">
+            <p>This page is handling by AS_STACK</p>
+            <hr color="yellow">
+            <p>copyright &copy; www.AS_stack.com. All rights reserved</p>
+            <hr color="yellow">
+            <P>Designed by Aman kumar singh</P>
+        </div>
+    </footer>
+    <section id="down">
+        <p>This page is handling by AS_STACK</p>
+        <p>copyright &copy; www.AS_stack.com. All rights reserved</p>
+        <P>Designed by Aman kumar singh</P>
+    </section>
+    <!-- <script src="main.js"></script> -->
+    <script src="serve.js"></script>
+    <script src="index.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+    <script type="text/javascript">
+        emailjs.init('ULMlE19ppzfagVGUO')
+    </script>
+</body>
+
+</html>

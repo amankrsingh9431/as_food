@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AS_food</title>
+    <link rel="stylesheet" href="as.css">
+    <link rel="shortcut icon" href="image/logo.png">
+</head>
+<body>
+    <header id="header">
+        <img onclick="closebox()" id="closebox" src="image/close (1).png">
+        <form action="" id="class2">
+            <h2>SIGN IN</h2>
+            <div class="control">
+              <label for="">Enter Email:</label>
+              <input type="email" placeholder="Enter Your Email" />
+            </div>
+            <div class="control">
+              <label for="">Password:</label>
+              <input type="password" placeholder="Password" />
+            </div>
+            <div class="checkbox d-flex">
+              <input id="check" type="checkbox" />
+              <span>Remember Me</span>
+            </div>
+            <button class="btn">Sign In</button>
+            <div class="links">
+              <span>Forgot Password? <a href="">Click Here</a></span>
+              <span onclick="create()">Don't Have An Account? <a >Create One</a></span>
+            </div>
+          </form>
+          <form action="" id="open">
+         <h2>Regestration/sign up</h2>
+         <div id="name">
+            <p>Enter Name</p>
+            <input type="text" id="ftext">
+        </div>
+         <div class="fst">
+            <div class="first">
+                <p>First Name</p>
+                <input type="text" id="ftxt">
+            </div>
+            <div class="scnd">
+                <p>Last Name</p>
+                <input type="text" id="stxt">
+            </div>
+        </div>
+        <div class="email">
+            <p>Email ID</p>
+            <input type="email" class="bx" id="eml">
+        </div>
+        <div class="password">
+            <p>Password</p>
+            <input type="password" class="bx" id="pass">
+        </div>
+        <div class="mobile">
+            <p>Mobile</p>
+            <input type="text" class="bx" id="phn">
+        </div>
+        <button id="log2">Create Account</button>
+        <div id="lg">
+            <p>Sign up with Google</p>
+        </div>
+        <p id="sin" onclick="justlog()">Already Register? Login</p>
+          </form>
+    </header>
+    <script src="main.js"></script>
+    <script src="serve.js"></script>
+</body>
+</html>
